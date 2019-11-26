@@ -18,6 +18,7 @@
 - [eMail Test Hizmeti](https://mailtrap.io/)
 - [Faker Class](https://github.com/fzaninotto/Faker)
 - [Faker Tutorial](https://kode-blog.io/laravel-5-faker-tutorial)
+- [Ajax Dynamic Dependent Dropdown](https://www.webslesson.info/2018/03/ajax-dynamic-dependent-dropdown-in-laravel.html)
 
 # KURULUM
 
