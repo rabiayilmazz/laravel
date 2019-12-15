@@ -8,9 +8,9 @@
 
 
 ### Faydalı Kaynaklar
+- [laravel.com](https://laravel.com)
 - [laravel-cheat-sheet](https://github.com/piotr-jura-udemy/laravel-cheat-sheet)
 - [Laravel Cheatsheet](https://learninglaravel.net/cheatsheet/)
-- [Laravel for Beginners 2019 by: Mr Digital](https://www.youtube.com/watch?v=9ugzTTvNvkM&list=PLgFB6lmeXFOqRC4Sc-RST38jboldiQdds)
 - [Eloquent ORM](https://www.tutsmake.com/laravel-eloquent-cheat-sheet-eloquent-orm/)
 - [Laravel Relationships](https://www.tutsmake.com/laravel-eloquent-relationships-inverse-relationships/)
 - [Laravel 5 Cheat Sheet](https://learninglaravel.net/cheatsheet/)
@@ -60,7 +60,7 @@ composer global require laravel/installer
 - `npm install` ile npm paketlerinin yüklenmesi sağlanır
 
 ### Yeni Laravel Uygulamamızın ayarları
-- **config/app.php** dosyası içinde timezone ve locale için ayarlar vardır.
+- **config/app.php** dosyası içinde timezone ve locale için ayarlar vardır. Buradaki `'timezone' => 'UTC',` ifadesi şu şekilde değiştirilir: `'timezone' => 'Europe/Istanbul',`
 - `.env` dosyası içinde şu sahalar doldurulur:
 - `APP_NAME="Laravel Blog Uygulaması"`
 - `APP_URL=http://localhost.development`   DİKKAT: Sonunda '/' karakteri YOK!
@@ -1160,12 +1160,12 @@ iaydin|5369
 - Form Action: `action='POST'`
 - Form'un içinde : 
 ```
-{{ @scrf_field }}
+{{ @csrf_field }}
 {{ method_field('delete') }}
 ``
 **VEYA:**
 ```
-@scrf
+@csrf
 @method('DELETE')
 ```
 
